@@ -16,9 +16,7 @@
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=https://github.com/Sruthi-sk/&left_color=green&right_color=red)
 </p>
 
-<p>
-![Sruthi's GitHub stats](https://github-readme-stats.vercel.app/api?username=Sruthi-sk&show_icons=true&page_id=https://github.com/Sruthi-sk/github-readme-stats)
-</p>
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=Sruthi-sk&show_icons=true&locale=en" alt="Sruthi-sk" /></p>
 
 
 
