@@ -1,6 +1,6 @@
 <h2> Hi there 👋 I'm Sruthi! </h2>
 
-<p> I'm a computer science engineer who's currently working as a Research Fellow at the Centre for Consciousness Studies, NIMHANS, India. I'm interested in working on disciplines related to neurotechnology, computational neuroscience, and ML and DL applications in the field. </p>
+<p> I'm a computer science engineer who's currently working as a Research Fellow at the Centre for Consciousness Studies, NIMHANS, India. I'm interested in working on disciplines related to neurotechnology, computational neuroscience, ML and DL </p>
 <p> 📫 How to reach me: sruthi.susan.kuriakose@gmail.com </p>
 <p>
 <a href="https://www.linkedin.com/in/sruthikuriakose/">
