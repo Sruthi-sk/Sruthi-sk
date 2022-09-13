@@ -12,9 +12,10 @@
 <a href="https://www.researchgate.net/profile/Sruthi-Kuriakose-3">
   <img align="left" alt="Sruthi's Research" width="30px" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg" />
 </a>
-![visitors](https://visitor-badge.glitch.me/badge?page_id=https://github.com/Sruthi-sk/&left_color=blue&right_color=red)
+
+![visitors](https://visitor-badge.glitch.me/badge?page_id=https://github.com/Sruthi-sk/&left_color=green&right_color=red)
 </p>
-</p>
+
 
 <!--
 **Sruthi-sk/Sruthi-sk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
