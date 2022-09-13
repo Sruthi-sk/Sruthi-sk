@@ -17,7 +17,7 @@
 </p>
 
 <p>
-[![Sruthi's GitHub stats](https://github-readme-stats.vercel.app/api?username=Sruthi-sk&show_icons=true)](https://github.com/Sruthi-sk/github-readme-stats)
+![Sruthi's GitHub stats](https://github-readme-stats.vercel.app/api?username=Sruthi-sk&show_icons=true&page_id=https://github.com/Sruthi-sk/github-readme-stats)
 </p>
 
 
