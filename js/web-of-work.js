@@ -14,34 +14,51 @@
   }
   resize(); addEventListener('resize', resize);
 
+  // Palette can be overridden via window.__PALETTE (used for previewing schemes)
+  const PAL = Object.assign(
+    { me: '#1C2030', interest: '#8B7EC8', project: '#5E9C95', paper: '#7A93C9' },
+    window.__PALETTE || {}
+  );
   const TYPE = {
-    me: { c: '#1C2030', r: 30, label: 'Me' },
-    interest: { c: '#6C5CE7', r: 19, label: 'Interest' },
-    project: { c: '#14B8A6', r: 15, label: 'Project' },
-    paper: { c: '#3B82F6', r: 15, label: 'Paper' },
+    me: { c: PAL.me, r: 30, label: 'Me' },
+    interest: { c: PAL.interest, r: 19, label: 'Interest' },
+    project: { c: PAL.project, r: 15, label: 'Project' },
+    paper: { c: PAL.paper, r: 15, label: 'Paper' },
   };
 
   const N = [
     { id: 'me', label: 'Sruthi', type: 'me', desc: 'ML Research Engineer · AI Safety. Click a node to explore.', link: 'index.html' },
-    { id: 'cot', label: 'CoT Monitoring', type: 'interest', desc: 'Is a model\'s chain of thought faithful to its real reasoning?', link: 'index.html#about' },
+    // ── themes / concepts ──
+    { id: 'aisafety', label: 'AI Safety & Alignment', type: 'interest', desc: 'Honeypots, scheming evaluations, and white-box monitoring of frontier models.', link: 'index.html#about' },
     { id: 'mi', label: 'Mech Interp', type: 'interest', desc: 'Reverse-engineering the internal circuits of neural networks.', link: 'index.html#about' },
-    { id: 'meta', label: 'Metacognition', type: 'interest', desc: 'Can models monitor and control their own uncertainty?', link: 'index.html#about' },
-    { id: 'brain', label: 'Brain-inspired AI', type: 'interest', desc: 'Neural computation & models of the hippocampus.', link: 'index.html#about' },
-    { id: 'agent', label: 'agent-lens', type: 'project', desc: 'Agent observability & replay tooling for AI safety.', link: 'https://github.com/sruthi-sk/agent-lens' },
-    { id: 'steer', label: 'Test-Awareness Steering', type: 'project', desc: 'Probe-guided steering of problematic generations.', link: 'https://github.com/sruthi-sk/Test_Awareness_Steering' },
-    { id: 'sdft', label: 'Self-Distillation FT', type: 'project', desc: 'ARENA capstone — continual learning via self-distillation.', link: 'https://github.com/sruthi-sk/sdft-arena' },
-    { id: 'coadapt', label: 'Human-AI Co-Adaptation', type: 'project', desc: 'Multi-agent self-play + SAC for human–robot collaboration.', link: 'https://github.com/sruthi-sk/RILI_co-adaptation' },
+    { id: 'cot', label: 'CoT Monitoring', type: 'interest', desc: 'Is a model\'s chain of thought faithful to its real reasoning?', link: 'index.html#about' },
+    { id: 'meta', label: 'LLM Metacognition', type: 'interest', desc: 'Can models monitor and control their own uncertainty?', link: 'index.html#about' },
+    { id: 'train', label: 'Model Training', type: 'interest', desc: 'Finetuning (LoRA, DPO), continual learning, and calibration.', link: 'index.html#about' },
+    { id: 'rl', label: 'Reinforcement Learning', type: 'interest', desc: 'Distributional, multi-agent, and self-play RL.', link: 'index.html#about' },
+    { id: 'brain', label: 'Brain-Inspired AI', type: 'interest', desc: 'Neural computation & models of the hippocampus.', link: 'index.html#about' },
+    { id: 'neuro', label: 'Neurotech & Signals', type: 'interest', desc: 'EEG pipelines, seizure prediction, neurostimulation & biomedical signals.', link: 'index.html#about' },
+    // ── papers ──
     { id: 'calib', label: 'Probabilistic Calibration', type: 'paper', desc: 'Calibration as a trainable capability — submitted to COLM 2026.', link: 'https://scholar.google.com/citations?hl=en&user=Ra47vbkAAAAJ' },
     { id: 'faith', label: 'Faithfulness Checks', type: 'paper', desc: 'LLMs subverting CoT checks — 2nd place, Impact First Fellowship.', link: 'https://scholar.google.com/citations?hl=en&user=Ra47vbkAAAAJ' },
     { id: 'bio', label: 'bioBLUE', type: 'paper', desc: 'Bio-inspired alignment benchmark for LLMs · arXiv.', link: 'https://github.com/sruthi-sk/bioblue' },
     { id: 'dsm', label: 'DSM Hippocampus', type: 'paper', desc: 'Distributional successor model of the hippocampus · MSc thesis.', link: 'https://github.com/sruthi-sk/dsm-hippocampus' },
+    // ── projects ──
+    { id: 'steer', label: 'Test-Awareness Steering', type: 'project', desc: 'Probe-guided steering of problematic generations.', link: 'https://github.com/sruthi-sk/Test_Awareness_Steering' },
+    { id: 'sdft', label: 'Self-Distillation FT', type: 'project', desc: 'ARENA capstone — continual learning via self-distillation.', link: 'https://github.com/sruthi-sk/sdft-arena' },
+    { id: 'coadapt', label: 'Human-AI Co-Adaptation', type: 'project', desc: 'Multi-agent self-play + SAC for human–robot collaboration.', link: 'https://github.com/sruthi-sk/RILI_co-adaptation' },
+    { id: 'mri', label: 'MRI Iron Estimation', type: 'project', desc: 'Non-invasive liver-iron quantification from MRI.', link: 'https://github.com/sruthi-sk/MRI-Iron-estimation' },
   ];
   const E = [
-    ['me', 'cot'], ['me', 'mi'], ['me', 'meta'], ['me', 'brain'], ['me', 'agent'],
-    ['cot', 'faith'], ['cot', 'steer'],
-    ['mi', 'agent'], ['mi', 'steer'], ['mi', 'sdft'],
-    ['meta', 'calib'], ['meta', 'sdft'],
-    ['brain', 'dsm'], ['brain', 'bio'], ['brain', 'coadapt'],
+    ['me', 'aisafety'], ['me', 'mi'], ['me', 'cot'], ['me', 'meta'], ['me', 'train'], ['me', 'rl'], ['me', 'brain'], ['me', 'neuro'],
+    ['aisafety', 'mi'], ['aisafety', 'cot'], ['aisafety', 'meta'], ['brain', 'neuro'], ['brain', 'rl'],
+    ['faith', 'cot'], ['faith', 'aisafety'],
+    ['calib', 'train'],
+    ['bio', 'aisafety'], ['bio', 'brain'],
+    ['dsm', 'brain'], ['dsm', 'rl'],
+    ['steer', 'mi'], ['steer', 'aisafety'],
+    ['sdft', 'train'],
+    ['coadapt', 'rl'],
+    ['mri', 'neuro'],
   ];
   const byId = {}; const adj = {};
   N.forEach(n => { byId[n.id] = n; adj[n.id] = new Set(); n.vx = 0; n.vy = 0; });
@@ -52,8 +69,8 @@
     const a = -Math.PI / 2 + (i / arr.length) * Math.PI * 2;
     n.x = W / 2 + Math.cos(a) * rad; n.y = H / 2 + Math.sin(a) * rad;
   });
-  ring(N.filter(n => n.type === 'interest'), 165);
-  ring(N.filter(n => n.type === 'project' || n.type === 'paper'), 300);
+  ring(N.filter(n => n.type === 'interest'), 178);
+  ring(N.filter(n => n.type === 'project' || n.type === 'paper'), 320);
 
   let hover = null, drag = null, selected = null, mx = -1e3, my = -1e3, down = false, moved = 0;
 
@@ -120,7 +137,7 @@
     const hi = focus ? new Set([focus.id, ...adj[focus.id]]) : null;
     // edges
     E.forEach(([ai, bi]) => { const a = byId[ai], b = byId[bi]; const on = hi && hi.has(ai) && hi.has(bi);
-      ctx.strokeStyle = on ? 'rgba(108,92,231,.55)' : (hi ? 'rgba(43,45,66,.05)' : 'rgba(43,45,66,.13)');
+      ctx.strokeStyle = on ? 'rgba(139,126,200,.65)' : (hi ? 'rgba(43,45,66,.05)' : 'rgba(43,45,66,.13)');
       ctx.lineWidth = on ? 2 : 1; ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke(); });
     // nodes
     for (const n of N) {
