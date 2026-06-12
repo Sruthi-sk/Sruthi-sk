@@ -29,7 +29,7 @@
   if (fx && !reduce) {
     const ctx = fx.getContext('2d');
     let parts = [];
-    const COLORS = ['#F4795B', '#2BB3A3', '#8C6BE4', '#2B2D42'];
+    const COLORS = ['#6C5CE7', '#3B82F6', '#14B8A6', '#1C2030'];
     function size() { fx.width = innerWidth * devicePixelRatio; fx.height = innerHeight * devicePixelRatio; ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0); }
     size(); addEventListener('resize', size);
     addEventListener('click', e => {

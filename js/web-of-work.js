@@ -15,10 +15,10 @@
   resize(); addEventListener('resize', resize);
 
   const TYPE = {
-    me: { c: '#2B2D42', r: 30, label: 'Me' },
-    interest: { c: '#F4795B', r: 19, label: 'Interest' },
-    project: { c: '#2BB3A3', r: 15, label: 'Project' },
-    paper: { c: '#8C6BE4', r: 15, label: 'Paper' },
+    me: { c: '#1C2030', r: 30, label: 'Me' },
+    interest: { c: '#6C5CE7', r: 19, label: 'Interest' },
+    project: { c: '#14B8A6', r: 15, label: 'Project' },
+    paper: { c: '#3B82F6', r: 15, label: 'Paper' },
   };
 
   const N = [
@@ -120,7 +120,7 @@
     const hi = focus ? new Set([focus.id, ...adj[focus.id]]) : null;
     // edges
     E.forEach(([ai, bi]) => { const a = byId[ai], b = byId[bi]; const on = hi && hi.has(ai) && hi.has(bi);
-      ctx.strokeStyle = on ? 'rgba(244,121,91,.55)' : (hi ? 'rgba(43,45,66,.05)' : 'rgba(43,45,66,.13)');
+      ctx.strokeStyle = on ? 'rgba(108,92,231,.55)' : (hi ? 'rgba(43,45,66,.05)' : 'rgba(43,45,66,.13)');
       ctx.lineWidth = on ? 2 : 1; ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke(); });
     // nodes
     for (const n of N) {
@@ -143,7 +143,7 @@
       const w = ctx.measureText(hover.label).width + 24; const h = 30;
       let tx = hover.x + 22, tyy = hover.y - h - 8;
       if (tx + w > W - 10) tx = hover.x - w - 22; if (tyy < 70) tyy = hover.y + 20;
-      ctx.fillStyle = '#2B2D42'; ctx.shadowColor = 'rgba(43,45,66,.25)'; ctx.shadowBlur = 14; ctx.shadowOffsetY = 4;
+      ctx.fillStyle = '#1C2030'; ctx.shadowColor = 'rgba(28,32,48,.25)'; ctx.shadowBlur = 14; ctx.shadowOffsetY = 4;
       rrect(tx, tyy, w, h, 9); ctx.fill(); ctx.shadowBlur = 0; ctx.shadowOffsetY = 0;
       ctx.fillStyle = '#fff'; ctx.textAlign = 'left'; ctx.fillText(hover.label, tx + 12, tyy + 19);
     }

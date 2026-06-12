@@ -2,17 +2,18 @@
    Sruthi Susan Kuriakose — clean, light, friendly portfolio
    ============================================================ */
 :root{
-  --cream:#FBFAF5;
+  --cream:#F6F7FB;          /* cool off-white page background (not yellow) */
   --paper:#ffffff;
-  --ink:#2B2D42;
-  --muted:#8A8398;
-  --soft:#b3adbd;
-  --coral:#F4795B;
-  --teal:#2BB3A3;
+  --ink:#1C2030;            /* cool near-black */
+  --muted:#6E7488;
+  --soft:#9aa0b4;
+  --coral:#6C5CE7;          /* primary accent — indigo (kept the var name for simplicity) */
+  --teal:#14B8A6;
   --violet:#8C6BE4;
-  --line:rgba(43,45,66,.10);
-  --line-2:rgba(43,45,66,.06);
-  --amber:#FBE6A2;
+  --blue:#3B82F6;
+  --line:rgba(28,32,48,.10);
+  --line-2:rgba(28,32,48,.055);
+  --amber:#FBE6A2;          /* reserved for award badges only */
   --font-display:'Fredoka',system-ui,sans-serif;
   --font-body:'Nunito',system-ui,sans-serif;
   --maxw:920px;
@@ -102,15 +103,15 @@ h1,h2,h3{font-family:var(--font-display);font-weight:600;letter-spacing:.2px;lin
 .pub .venue{margin:8px 0;display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:.95rem;color:var(--muted);font-family:var(--font-display);}
 .badge{font-family:var(--font-display);font-weight:500;font-size:.82rem;padding:3px 10px;border-radius:8px;}
 .badge.amber{background:var(--amber);color:#7a5b08;}
-.badge.coral{background:rgba(244,121,91,.15);color:#c4452a;}
-.badge.teal{background:rgba(43,179,163,.15);color:#147a6e;}
+.badge.coral{background:rgba(108,92,231,.14);color:#4f3fcf;}
+.badge.teal{background:rgba(20,184,166,.15);color:#0f766e;}
 .authors{font-size:.98rem;color:#544f60;margin:6px 0 14px;}
 .authors .me{font-weight:700;color:var(--ink);}
 .btn-row{display:flex;flex-wrap:wrap;gap:9px;}
 .lbtn{font-family:var(--font-display);font-weight:400;font-size:.88rem;border:1.5px solid var(--line);
   background:var(--paper);padding:6px 15px;border-radius:9px;color:var(--ink);cursor:pointer;
   transition:border-color .2s,background .2s,transform .2s;display:inline-flex;align-items:center;gap:6px;}
-.lbtn:hover{border-color:var(--coral);background:rgba(244,121,91,.06);transform:translateY(-1px);}
+.lbtn:hover{border-color:var(--coral);background:rgba(108,92,231,.07);transform:translateY(-1px);}
 .lbtn.abstract{border-color:var(--violet);color:#6a4ec9;}
 .lbtn.abstract:hover{background:rgba(140,107,228,.08);}
 
