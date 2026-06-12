@@ -30,7 +30,12 @@
     const ctx = fx.getContext('2d');
     let parts = [];
     const COLORS = ['#6C5CE7', '#3B82F6', '#14B8A6', '#1C2030'];
-    function size() { fx.width = innerWidth * devicePixelRatio; fx.height = innerHeight * devicePixelRatio; ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0); }
+    function size() {
+      const dpr = Math.min(devicePixelRatio || 1, 2);
+      fx.width = innerWidth * dpr; fx.height = innerHeight * dpr;
+      fx.style.width = innerWidth + 'px'; fx.style.height = innerHeight + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
     size(); addEventListener('resize', size);
     addEventListener('click', e => {
       if (e.target.closest('a, button, summary, input, .modal-card')) return;
