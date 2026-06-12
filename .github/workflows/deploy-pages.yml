@@ -1,0 +1,66 @@
+name: Deploy portfolio to GitHub Pages
+
+# Deploys on every push to main (i.e. after you merge the PR), and on demand.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # ───────────────────────────────────────────────────────────────
+      #  WHERE TO EDIT: change PUBLISH_PATH below.
+      #   • PUBLISH_PATH: draft   →  site lives at  sruthi-sk.github.io/draft/
+      #                              (and is hidden from search engines)
+      #   • PUBLISH_PATH: ''      →  site goes LIVE at sruthi-sk.github.io/
+      #                              (and becomes search-indexable)
+      #  That single value is the only thing you change to publish for real.
+      # ───────────────────────────────────────────────────────────────
+      - name: Assemble site
+        env:
+          PUBLISH_PATH: draft
+        run: |
+          rm -rf _site
+          mkdir -p "_site/${PUBLISH_PATH}"
+          rsync -a \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='_site' \
+            --exclude='README.md' \
+            ./ "_site/${PUBLISH_PATH}/"
+          # While in draft, keep the whole site out of search results.
+          # This block disappears automatically once PUBLISH_PATH is empty.
+          if [ -n "$PUBLISH_PATH" ]; then
+            printf 'User-agent: *\nDisallow: /\n' > _site/robots.txt
+          fi
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

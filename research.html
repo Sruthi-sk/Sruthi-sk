@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="An interactive map of Sruthi Susan Kuriakose's research — interests, projects, and papers."/>
+<title>Research · Sruthi Susan Kuriakose</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="research">
+<div class="cursor" id="cursor"></div>
+
+<canvas id="web"></canvas>
+
+<div class="r-nav">
+  <a href="index.html" class="r-back" data-mag>← Home</a>
+  <div class="r-title">
+    <h1>map of research interests</h1>
+    <p>hover to connect · drag to rearrange · click for details</p>
+  </div>
+  <span style="width:90px"></span>
+</div>
+
+<div class="r-legend">
+  <span><i class="d" style="background:#1C2030"></i>me</span>
+  <span><i class="d" style="background:#8B7EC8"></i>interests</span>
+  <span><i class="d" style="background:#5E9C95"></i>projects</span>
+  <span><i class="d" style="background:#7A93C9"></i>papers</span>
+</div>
+
+<aside class="detail" id="detail">
+  <div class="dtag" id="d-tag">Project</div>
+  <h3 id="d-title">Title</h3>
+  <p id="d-desc">Description</p>
+  <a class="dlink" id="d-link" href="#" target="_blank" rel="noopener">Open ↗</a>
+</aside>
+
+<script src="js/web-of-work.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

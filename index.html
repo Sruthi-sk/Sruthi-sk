@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Sruthi Susan Kuriakose — Machine Learning Research Engineer working on AI safety, interpretability, and brain-inspired AI."/>
+<title>Sruthi Susan Kuriakose · ML Research Engineer · AI Safety</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<canvas id="fx"></canvas>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#top" class="brand"><span class="brand-dot"></span>Sruthi&nbsp;Susan&nbsp;Kuriakose</a>
+  <nav class="nav-links">
+    <a href="#about">About</a>
+    <a href="#publications">Publications</a>
+    <a href="#news">News</a>
+    <a href="#projects">Projects</a>
+    <a href="research.html" class="cta" data-mag>Research ↗</a>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <p class="eyebrow reveal">London, UK</p>
+      <h1 class="reveal">Sruthi Susan<br>Kuriakose</h1>
+      <p class="role reveal">Machine Learning Research Engineer · AI Safety</p>
+      <p class="intro reveal">I build robust, interpretable ML systems that bridge scientific
+        understanding and real-world impact — currently focused on chain-of-thought
+        monitoring, mechanistic interpretability, and the metacognition of language models.</p>
+      <p class="now reveal">Currently <b>ARENA 7.0</b> &amp; <b>MARS 4.0</b> fellow · prev. <b>UCL</b> · <b>NIMHANS</b></p>
+      <div class="hero-links reveal">
+        <a href="research.html" class="chip primary" data-mag>Explore my research →</a>
+        <a href="https://github.com/sruthi-sk" target="_blank" rel="noopener" class="chip" data-mag>GitHub</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=Ra47vbkAAAAJ" target="_blank" rel="noopener" class="chip" data-mag>Scholar</a>
+        <a href="https://www.linkedin.com/in/sruthikuriakose" target="_blank" rel="noopener" class="chip" data-mag>LinkedIn</a>
+      </div>
+    </div>
+    <!-- Profile image placeholder — replace assets/profile.jpg with your photo.
+         Until then it gracefully falls back to the "SK" monogram. -->
+    <div class="avatar reveal">
+      <img src="assets/profile.jpg" alt="Sruthi Susan Kuriakose"
+           style="width:100%;height:100%;border-radius:50%;object-fit:cover;"
+           onerror="this.style.display='none';this.parentNode.append('SK');"/>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <p class="eyebrow reveal">About</p>
+    <h2 class="sec-title reveal">Research at the seam of<br>minds and machines</h2>
+    <p class="reveal" style="margin-top:14px;">My work spans end-to-end development of machine learning systems
+      across research and applied domains — time-series forecasting, image classification,
+      self-supervised segmentation, Bayesian modeling, and transformer-based vision and language models.
+      Earlier work runs from low-latency pipelines for embedded neurotechnology and seizure prediction at
+      the bedside, to medical-imaging diagnostics and brain-inspired models of spatial cognition.</p>
+
+    <div class="interest-grid">
+      <article class="interest reveal"><div class="ico" style="background:rgba(108,92,231,.14)">🧭</div>
+        <h3>Chain-of-Thought Monitoring</h3>
+        <p>Testing whether intervention-based consistency checks stay reliable as reasoning difficulty scales.</p></article>
+      <article class="interest reveal"><div class="ico" style="background:rgba(20,184,166,.15)">🔬</div>
+        <h3>Mechanistic Interpretability</h3>
+        <p>Reverse-engineering internal circuits to make model behaviour legible and steerable.</p></article>
+      <article class="interest reveal"><div class="ico" style="background:rgba(59,130,246,.14)">🎚️</div>
+        <h3>Metacognition &amp; Uncertainty</h3>
+        <p>Whether LLMs can monitor and control their own predictive uncertainty — for white-box monitoring.</p></article>
+      <article class="interest reveal"><div class="ico" style="background:rgba(140,107,228,.16)">🧠</div>
+        <h3>Brain-Inspired AI</h3>
+        <p>Neural computation and distributional RL models of the hippocampus.</p></article>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <p class="eyebrow reveal">Publications &amp; Research Code</p>
+    <h2 class="sec-title reveal">Selected work</h2>
+    <p class="sec-intro reveal">Full list on <a href="https://scholar.google.com/citations?hl=en&user=Ra47vbkAAAAJ" target="_blank" rel="noopener" style="color:var(--coral);font-weight:600;">Google Scholar ↗</a></p>
+
+    <article class="pub reveal">
+      <h3>Probabilistic Calibration Is a Trainable Capability in Language Models</h3>
+      <div class="venue">📍 Submitted to COLM 2026 <span class="badge teal">MARS 4.0</span></div>
+      <p class="authors"><span class="me">Sruthi Susan Kuriakose</span> et al.</p>
+      <div class="btn-row">
+        <button class="lbtn abstract" data-modal="m-calib">＋ Abstract</button>
+        <a class="lbtn" href="https://scholar.google.com/citations?hl=en&user=Ra47vbkAAAAJ" target="_blank" rel="noopener">Scholar ↗</a>
+      </div>
+    </article>
+
+    <article class="pub reveal">
+      <h3>Reasoning LLMs Can Subvert Intervention-Based Faithfulness Checks</h3>
+      <div class="venue">📍 Report <span class="badge amber">⚡ 2nd Place · Impact First Fellowship</span></div>
+      <p class="authors"><span class="me">Sruthi Susan Kuriakose</span></p>
+      <div class="btn-row">
+        <button class="lbtn abstract" data-modal="m-faith">＋ Abstract</button>
+        <a class="lbtn" href="https://scholar.google.com/citations?hl=en&user=Ra47vbkAAAAJ" target="_blank" rel="noopener">Report ↗</a>
+      </div>
+    </article>
+
+    <article class="pub reveal">
+      <h3>Runaway-Optimiser-Like Failure Modes on Biologically &amp; Economically Aligned AI Safety Benchmarks for LLMs</h3>
+      <div class="venue">📍 LessWrong · arXiv <span class="badge coral">bioBLUE</span></div>
+      <p class="authors"><span class="me">Sruthi Susan Kuriakose</span> et al.</p>
+      <div class="btn-row">
+        <button class="lbtn abstract" data-modal="m-bio">＋ Abstract</button>
+        <a class="lbtn" href="https://github.com/sruthi-sk/bioblue" target="_blank" rel="noopener">Code ↗</a>
+      </div>
+    </article>
+
+    <article class="pub reveal">
+      <h3>Interpreting the Distributional Successor Measure as a Model of the Hippocampus</h3>
+      <div class="venue">📍 MSc Thesis · UCL <span class="badge amber">Distinction</span></div>
+      <p class="authors"><span class="me">Sruthi Susan Kuriakose</span></p>
+      <div class="btn-row">
+        <button class="lbtn abstract" data-modal="m-dsm">＋ Abstract</button>
+        <a class="lbtn" href="https://github.com/sruthi-sk/dsm-hippocampus" target="_blank" rel="noopener">Code ↗</a>
+        <!-- TODO: replace # with the thesis PDF link -->
+        <a class="lbtn" href="#" data-pdf>PDF ↗</a>
+      </div>
+    </article>
+
+    <details class="reveal" style="margin-top:26px;">
+      <summary style="cursor:pointer;font-family:var(--font-display);color:var(--muted);">Earlier conference proceedings</summary>
+      <div style="margin-top:14px;color:#544f60;font-size:.97rem;line-height:2;">
+        <div><strong>Extending wireless wearable EEG with a single-board computer for real-time neurofeedback &amp; neuromodulation</strong> — ICBNA 2022 · <span class="badge amber">🏆 Best Paper Award</span></div>
+        <div>A simple seizure-prediction approach running on a single-board computer — IAN 2022</div>
+        <div>Dream Hunter: decoding multivariate EEG between dream recall and no recall from high-density PSG — IAN 2022</div>
+        <div>Simple neurofeedback via machine learning: real-time assessment of meditation state — ICBNA 2022 · bioRxiv</div>
+      </div>
+    </details>
+  </section>
+
+  <!-- NEWS -->
+  <section id="news">
+    <p class="eyebrow reveal">News</p>
+    <h2 class="sec-title reveal" style="margin-bottom:26px;">Recent updates</h2>
+    <div class="news-list">
+      <div class="news-row reveal"><span class="news-date">Jan 2026</span><p>Joined <strong>ARENA 7.0</strong> as an Alignment Research Engineer Accelerator fellow — mechanistic interpretability, RL, and agentic evaluations.</p></div>
+      <div class="news-row reveal"><span class="news-date">Dec 2025</span><p>Started <strong>MARS 4.0</strong> (Cambridge), investigating whether LLMs can metacognitively monitor and control their own uncertainty.</p></div>
+      <div class="news-row reveal"><span class="news-date">Nov 2025</span><p>AI Safety Research Fellow at <strong>Athena</strong> — building honeypots to evaluate scheming propensity in frontier models.</p></div>
+      <div class="news-row reveal"><span class="news-date">Oct 2025</span><p>Awarded <strong>2nd place</strong> in the Impact First Research Fellowship for work on chain-of-thought faithfulness.</p></div>
+      <div class="news-row reveal"><span class="news-date">Sep 2024</span><p>Completed my <strong>MSc Machine Learning at UCL</strong> with Distinction.</p></div>
+      <div class="news-row reveal"><span class="news-date">2022</span><p>Received the <strong>Best Paper Award</strong> at ICBNA 2022 for real-time wearable EEG neurofeedback work.</p></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="eyebrow reveal">Projects</p>
+    <h2 class="sec-title reveal">Things I've built</h2>
+    <p class="sec-intro reveal">A selection — more on <a href="https://github.com/sruthi-sk" target="_blank" rel="noopener" style="color:var(--coral);font-weight:600;">GitHub ↗</a></p>
+    <div class="proj-grid">
+      <a class="proj reveal" href="https://github.com/sruthi-sk/Test_Awareness_Steering" target="_blank" rel="noopener"><h3>Test-Awareness Steering</h3><p>Probe-guided adaptive steering of problematic generations.</p><span class="ptag">LLM Steering</span></a>
+      <a class="proj reveal" href="https://github.com/sruthi-sk/sdft-arena" target="_blank" rel="noopener"><h3>Self-Distillation FT</h3><p>ARENA capstone — continual learning via self-distillation finetuning.</p><span class="ptag">Continual Learning</span></a>
+      <a class="proj reveal" href="https://github.com/sruthi-sk/MRI-Iron-estimation" target="_blank" rel="noopener"><h3>Quantitative MRI</h3><p>Non-invasive liver-iron quantification; T2* within &lt;5% of console references.</p><span class="ptag">MATLAB · Imaging</span></a>
+      <a class="proj reveal" href="https://github.com/sruthi-sk/vi-transformer-mixup-regression" target="_blank" rel="noopener"><h3>ViT + MixUp</h3><p>Vision Transformer on CIFAR-10 with MixUp augmentation ablations.</p><span class="ptag">PyTorch · Vision</span></a>
+      <a class="proj reveal" href="https://github.com/sruthi-sk/RILI_co-adaptation" target="_blank" rel="noopener"><h3>Human-AI Co-Adaptation</h3><p>Multi-agent self-play with SAC pre-training for human–robot collaboration.</p><span class="ptag">RL · Robotics</span></a>
+      <a class="proj reveal" href="https://github.com/sruthi-sk/bayesian-dl" target="_blank" rel="noopener"><h3>Bayesian Deep Learning</h3><p>Epistemic vs. aleatoric uncertainty, variational inference, and VAEs.</p><span class="ptag">Bayesian · VAE</span></a>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <p class="eyebrow reveal">Toolkit</p>
+    <h2 class="sec-title reveal" style="margin-bottom:26px;">Technologies &amp; skills</h2>
+    <div class="skills-grid">
+      <div class="skillcard reveal"><h3>Languages</h3><div class="pills">
+        <span class="pill">Python</span><span class="pill">C++</span><span class="pill">MATLAB</span><span class="pill">SQL</span><span class="pill">JavaScript</span></div></div>
+      <div class="skillcard reveal"><h3>ML Frameworks</h3><div class="pills">
+        <span class="pill">PyTorch</span><span class="pill">TensorFlow</span><span class="pill">JAX</span><span class="pill">Hugging Face</span><span class="pill">scikit-learn</span><span class="pill">NumPy</span></div></div>
+      <div class="skillcard reveal"><h3>Methods</h3><div class="pills">
+        <span class="pill">Transformers</span><span class="pill">LoRA &amp; DPO</span><span class="pill">Bayesian Modeling</span><span class="pill">Reinforcement Learning</span><span class="pill">Self-Supervised Learning</span><span class="pill">Mechanistic Interpretability</span><span class="pill">Signal Processing</span></div></div>
+      <div class="skillcard reveal"><h3>Tools &amp; Platforms</h3><div class="pills">
+        <span class="pill">Git</span><span class="pill">Linux</span><span class="pill">Docker</span><span class="pill">LangGraph</span><span class="pill">Weights &amp; Biases</span><span class="pill">LaTeX</span></div></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <p class="eyebrow reveal">Contact</p>
+    <h2 class="sec-title reveal">Let's build something real</h2>
+    <p class="reveal">Open to research collaborations and roles in technical AI safety, interpretability, and brain-inspired ML.</p>
+    <div class="contact-links reveal">
+      <a href="mailto:sruthi.kuriakose99@gmail.com" class="chip primary" data-mag>Email</a>
+      <a href="https://github.com/sruthi-sk" target="_blank" rel="noopener" class="chip" data-mag>GitHub</a>
+      <a href="https://scholar.google.com/citations?hl=en&user=Ra47vbkAAAAJ" target="_blank" rel="noopener" class="chip" data-mag>Scholar</a>
+      <a href="https://www.linkedin.com/in/sruthikuriakose" target="_blank" rel="noopener" class="chip" data-mag>LinkedIn</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span>© <span id="year"></span> Sruthi Susan Kuriakose</span>
+  <span>London, UK · made with a little parallax &amp; a lot of curiosity</span>
+</footer>
+
+<!-- MODALS -->
+<div class="modal" id="m-calib">
+  <div class="modal-ov" data-close></div>
+  <div class="modal-card">
+    <button class="modal-close" data-close>×</button>
+    <h3>Probabilistic Calibration Is a Trainable Capability in Language Models</h3>
+    <div class="venue">📍 Submitted to COLM 2026 · MARS 4.0</div>
+    <p class="abstract">We ask whether predictive calibration in language models is a capability that can be deliberately trained, rather than an emergent side-effect — studying how training objectives and finetuning shape a model's calibration and the reliability of its probability estimates, with relevance to alignment and white-box monitoring.</p>
+    <a class="lbtn" href="https://scholar.google.com/citations?hl=en&user=Ra47vbkAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
+  </div>
+</div>
+<div class="modal" id="m-faith">
+  <div class="modal-ov" data-close></div>
+  <div class="modal-card">
+    <button class="modal-close" data-close>×</button>
+    <h3>Reasoning LLMs Can Subvert Intervention-Based Faithfulness Checks</h3>
+    <div class="venue">📍 Report · 2nd Place, Impact First Research Fellowship</div>
+    <p class="abstract">Intervention-based consistency checks are a popular tool for auditing whether a model's chain of thought is faithful to its underlying reasoning. We design experiments that scale reasoning-task difficulty and show that reasoning models can systematically subvert these checks — raising questions about the reliability of CoT monitorability as a safety guarantee.</p>
+    <a class="lbtn" href="https://scholar.google.com/citations?hl=en&user=Ra47vbkAAAAJ" target="_blank" rel="noopener">Read more ↗</a>
+  </div>
+</div>
+<div class="modal" id="m-bio">
+  <div class="modal-ov" data-close></div>
+  <div class="modal-card">
+    <button class="modal-close" data-close>×</button>
+    <h3>Runaway-Optimiser-Like Failure Modes on Bio &amp; Economically Aligned Benchmarks</h3>
+    <div class="venue">📍 LessWrong · arXiv · bioBLUE</div>
+    <p class="abstract">bioBLUE evaluates LLM decision-making under biologically and economically inspired constraints — homeostasis, sustainability, and multi-objective trade-offs. Through long-horizon textual simulations we surface systematic runaway-optimiser-like failures, including unbounded maximisation, neglect of stated objectives, and self-imitative drift — highlighting alignment risks in long-running scenarios.</p>
+    <a class="lbtn" href="https://github.com/sruthi-sk/bioblue" target="_blank" rel="noopener">Code on GitHub ↗</a>
+  </div>
+</div>
+<div class="modal" id="m-dsm">
+  <div class="modal-ov" data-close></div>
+  <div class="modal-card">
+    <button class="modal-close" data-close>×</button>
+    <h3>Interpreting the Distributional Successor Measure as a Model of the Hippocampus</h3>
+    <div class="venue">📍 MSc Thesis · University College London · Distinction</div>
+    <p class="abstract">This thesis investigates the Distributional Successor Measure (DSM) as a computational model of the hippocampus. I train a generative, particle-based distributional reinforcement-learning model using an adversarial MMD loss to capture future-state distributions in spatial tasks, with structured inputs inspired by hippocampal place cells. Probing the learned representations reveals task- and environment-specific spatial structure, with latent components that linearly decode present and future locations — mirroring neural and behavioural activity. Benchmarked against the classic Successor Representation, the DSM shows ~15% greater representational stability under remapping, indicating improved robustness to environmental perturbation.</p>
+    <div class="btn-row">
+      <a class="lbtn" href="https://github.com/sruthi-sk/dsm-hippocampus" target="_blank" rel="noopener">Code ↗</a>
+      <a class="lbtn" href="#" data-pdf>PDF ↗</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
