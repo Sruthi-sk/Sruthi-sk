@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Sruthi Susan Kuriakose — Machine Learning Research Engineer working on AI safety, interpretability, and brain-inspired AI."/>
-<title>Sruthi Susan Kuriakose · ML Research Engineer · AI Safety</title>
+<meta name="description" content="Sruthi Susan Kuriakose — Research mentor and machine learning researcher working on AI safety, interpretability, and brain-inspired AI."/>
+<title>Sruthi Susan Kuriakose · Research Mentor · AI Safety</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
@@ -21,6 +21,7 @@
     <a href="#about">About</a>
     <a href="#publications">Publications</a>
     <a href="#news">News</a>
+    <a href="#mentoring">Mentoring</a>
     <a href="#projects">Projects</a>
     <a href="research.html" class="cta" data-mag>Research ↗</a>
   </nav>
@@ -32,15 +33,18 @@
     <div>
       <p class="eyebrow reveal">London, UK</p>
       <h1 class="reveal">Sruthi Susan<br>Kuriakose</h1>
-      <p class="role reveal">Machine Learning Research Engineer · AI Safety</p>
-      <p class="intro reveal">I build robust, interpretable ML systems that bridge scientific
-        understanding and real-world impact — currently focused on chain-of-thought
-        monitoring, mechanistic interpretability, and the metacognition of language models.</p>
-      <p class="now reveal">Currently <b>ARENA 7.0</b> &amp; <b>MARS 4.0</b> fellow · prev. <b>UCL</b> · <b>NIMHANS</b></p>
+      <p class="role reveal">Research Mentor · AI Safety</p>
+      <p class="intro reveal">I work at the intersection of model internals and behavioural safety —
+        metacognition, evals, and CoT monitorability. My background bridges
+        neuroscience and machine learning: I started in neurotech and computational neuroscience,
+        and now apply that lens to how AI systems' internal representations can be trusted,
+        validated, and intervened on.</p>
+      <p class="now reveal">Recently <b>ARENA 7.0</b> &amp; <b>MARS 4.0</b> fellow · Education. <b>UCL</b> · <b>NITT</b></p>
       <div class="hero-links reveal">
         <a href="research.html" class="chip primary" data-mag>Explore my research →</a>
         <a href="https://github.com/sruthi-sk" target="_blank" rel="noopener" class="chip" data-mag>GitHub</a>
         <a href="https://scholar.google.com/citations?hl=en&user=Ra47vbkAAAAJ" target="_blank" rel="noopener" class="chip" data-mag>Scholar</a>
+        <a href="https://www.researchgate.net/profile/Sruthi-Kuriakose-3" target="_blank" rel="noopener" class="chip" data-mag>ResearchGate</a>
         <a href="https://www.linkedin.com/in/sruthikuriakose" target="_blank" rel="noopener" class="chip" data-mag>LinkedIn</a>
       </div>
     </div>
@@ -56,27 +60,40 @@
   <!-- ABOUT -->
   <section class="about" id="about">
     <p class="eyebrow reveal">About</p>
-    <h2 class="sec-title reveal">Research at the seam of<br>minds and machines</h2>
-    <p class="reveal" style="margin-top:14px;">My work spans end-to-end development of machine learning systems
-      across research and applied domains — time-series forecasting, image classification,
-      self-supervised segmentation, Bayesian modeling, and transformer-based vision and language models.
-      Earlier work runs from low-latency pipelines for embedded neurotechnology and seizure prediction at
-      the bedside, to medical-imaging diagnostics and brain-inspired models of spatial cognition.</p>
+    <p class="reveal" style="margin-top:14px;">Before AI safety, I worked across ML for science and health —
+      EEG/neurotech pipelines, seizure prediction, medical imaging, and brain-inspired models of spatial
+      cognition. Also projects on voice diffusion models, vision transformer models, self-supervised
+      segmentation, Bayesian modeling, and multi-agent RL.</p>
 
     <div class="interest-grid">
-      <article class="interest reveal"><div class="ico" style="background:rgba(108,92,231,.14)">🧭</div>
-        <h3>Chain-of-Thought Monitoring</h3>
-        <p>Testing whether intervention-based consistency checks stay reliable as reasoning difficulty scales.</p></article>
       <article class="interest reveal"><div class="ico" style="background:rgba(20,184,166,.15)">🔬</div>
         <h3>Mechanistic Interpretability</h3>
         <p>Reverse-engineering internal circuits to make model behaviour legible and steerable.</p></article>
-      <article class="interest reveal"><div class="ico" style="background:rgba(59,130,246,.14)">🎚️</div>
-        <h3>Metacognition &amp; Uncertainty</h3>
-        <p>Whether LLMs can monitor and control their own predictive uncertainty — for white-box monitoring.</p></article>
+      <article class="interest reveal" data-modal="m-faith"><div class="ico" style="background:rgba(108,92,231,.14)">🧭</div>
+        <h3>CoT Monitorability</h3>
+        <p>When chain-of-thought monitoring breaks: how reasoning vs. distilled models handle injected errors.</p>
+        <span class="more">Read ↗</span></article>
+      <article class="interest reveal" data-modal="m-meta"><div class="ico" style="background:rgba(59,130,246,.14)">🎚️</div>
+        <h3>Metacognition</h3>
+        <p>Can LLMs deliberately monitor and control their own output distributions?</p>
+        <span class="more">Read ↗</span></article>
+      <article class="interest reveal" data-modal="m-scheme"><div class="ico" style="background:rgba(231,76,60,.13)">🕵️</div>
+        <h3>Scheming Evals</h3>
+        <p>Honeypots, probes, and steering to test whether evaluation-awareness drives scheming.</p>
+        <span class="more">Read ↗</span></article>
+      <article class="interest reveal" data-modal="m-bio"><div class="ico" style="background:rgba(245,158,11,.15)">⏳</div>
+        <h3>Long-Horizon Drift</h3>
+        <p>Competent for many steps, then structured drift — long before the context window fills.</p>
+        <span class="more">Read ↗</span></article>
+      <article class="interest reveal" data-modal="m-calib"><div class="ico" style="background:rgba(20,184,166,.15)">🎲</div>
+        <h3>Finetuning for Stochasticity</h3>
+        <p>Teaching models to be calibrated random samplers — not "Wednesday" every time. </p>
+        <span class="more">Read ↗</span></article>
       <article class="interest reveal"><div class="ico" style="background:rgba(140,107,228,.16)">🧠</div>
         <h3>Brain-Inspired AI</h3>
         <p>Neural computation and distributional RL models of the hippocampus.</p></article>
     </div>
+
   </section>
 
   <!-- PUBLICATIONS -->
@@ -87,7 +104,7 @@
 
     <article class="pub reveal">
       <h3>Probabilistic Calibration Is a Trainable Capability in Language Models</h3>
-      <div class="venue">📍 Submitted to COLM 2026 <span class="badge teal">MARS 4.0</span></div>
+      <div class="venue"><span class="badge teal">MARS 4.0</span></div>
       <p class="authors"><span class="me">Sruthi Susan Kuriakose</span> et al.</p>
       <div class="btn-row">
         <button class="lbtn abstract" data-modal="m-calib">＋ Abstract</button>
@@ -107,7 +124,9 @@
 
     <article class="pub reveal">
       <h3>Runaway-Optimiser-Like Failure Modes on Biologically &amp; Economically Aligned AI Safety Benchmarks for LLMs</h3>
-      <div class="venue">📍 LessWrong · arXiv <span class="badge coral">bioBLUE</span></div>
+      <div class="venue">📍 LessWrong · arXiv 
+      <!-- <span class="badge coral">bioBLUE</span> -->
+      </div>
       <p class="authors"><span class="me">Sruthi Susan Kuriakose</span> et al.</p>
       <div class="btn-row">
         <button class="lbtn abstract" data-modal="m-bio">＋ Abstract</button>
@@ -122,8 +141,7 @@
       <div class="btn-row">
         <button class="lbtn abstract" data-modal="m-dsm">＋ Abstract</button>
         <a class="lbtn" href="https://github.com/sruthi-sk/dsm-hippocampus" target="_blank" rel="noopener">Code ↗</a>
-        <!-- TODO: replace # with the thesis PDF link -->
-        <a class="lbtn" href="#" data-pdf>PDF ↗</a>
+        <a class="lbtn" href="https://github.com/Sruthi-sk/dsm-hippocampus/blob/main/MSc_Thesis_UCL.pdf" target="_blank" rel="noopener">PDF ↗</a>
       </div>
     </article>
 
@@ -143,13 +161,42 @@
     <p class="eyebrow reveal">News</p>
     <h2 class="sec-title reveal" style="margin-bottom:26px;">Recent updates</h2>
     <div class="news-list">
-      <div class="news-row reveal"><span class="news-date">Jan 2026</span><p>Joined <strong>ARENA 7.0</strong> as an Alignment Research Engineer Accelerator fellow — mechanistic interpretability, RL, and agentic evaluations.</p></div>
-      <div class="news-row reveal"><span class="news-date">Dec 2025</span><p>Started <strong>MARS 4.0</strong> (Cambridge), investigating whether LLMs can metacognitively monitor and control their own uncertainty.</p></div>
+      <div class="news-row reveal"><span class="news-date">Sep 2026</span><p>New paper: <strong>Introspection or Post-Hoc Rationalization? A Cross-Model and Cross-Domain Study of LLM Metacognition</strong></p></div>
+      <div class="news-row reveal"><span class="news-date">Sep 2026</span><p>Teacher at <strong>ML4Good</strong> — technical sessions, coding walkthroughs, facilitating discussion groups, project red-teaming, and career chats</p></div>
+      <div class="news-row reveal"><span class="news-date">Jul 2026</span><p>Research Mentor for <strong>Algoverse</strong> — mentoring 4 concurrent 12-week research projects across AI control, LLM evaluation, world models, and medical VLMs</p></div>
+      <div class="news-row reveal"><span class="news-date">May 2026</span><p>Released preprint — <strong>Probabilistic Calibration Is a Trainable Capability in Language Models</strong> · submitted to conferences</p></div>
+      <div class="news-row reveal"><span class="news-date">Apr 2026</span><p>Consultant at <strong>Canopy Labs</strong> building diffusion models for audio generation</p></div>
+      <div class="news-row reveal"><span class="news-date">Jan 2026</span><p> Participated in <strong>ARENA 7.0</strong> in-person for technical alignment training on mechanistic interpretability, RL, and agentic evaluations. Capstone project on Self-Distillation Finetuning</p></div>
+      <div class="news-row reveal"><span class="news-date">Dec 2025</span><p>AI Safety Research Fellow at <strong>MARS 4.0</strong> investigating whether LLMs can metacognitively monitor and control their own internals.</p></div>
       <div class="news-row reveal"><span class="news-date">Nov 2025</span><p>AI Safety Research Fellow at <strong>Athena</strong> — building honeypots to evaluate scheming propensity in frontier models.</p></div>
-      <div class="news-row reveal"><span class="news-date">Oct 2025</span><p>Awarded <strong>2nd place</strong> in the Impact First Research Fellowship for work on chain-of-thought faithfulness.</p></div>
-      <div class="news-row reveal"><span class="news-date">Sep 2024</span><p>Completed my <strong>MSc Machine Learning at UCL</strong> with Distinction.</p></div>
-      <div class="news-row reveal"><span class="news-date">2022</span><p>Received the <strong>Best Paper Award</strong> at ICBNA 2022 for real-time wearable EEG neurofeedback work.</p></div>
+      <div class="news-row reveal"><span class="news-date">Oct 2025</span><p> 2nd place in the Impact First (Arcadia Impact) Research Fellowship presentations </p></div>
+      <!-- <div class="news-row reveal"><span class="news-date">Sep 2024</span><p>Completed  <strong>MSc Machine Learning at UCL</strong> with Distinction.</p></div> -->
+      <!-- <div class="news-row reveal"><span class="news-date">2022</span><p>Received the <strong>Best Paper Award</strong> at ICBNA 2022 for real-time wearable EEG neurofeedback work.</p></div> -->
     </div>
+  </section>
+
+  <!-- RESEARCH MANAGEMENT -->
+  <section id="mentoring">
+    <p class="eyebrow reveal">Research Management</p>
+    <h2 class="sec-title reveal">Mentoring &amp; teaching</h2>
+
+    <article class="pub reveal">
+      <h3>Research Mentor &amp; Manager — Algoverse</h3>
+      <div class="venue">📍 Jul 2026 – Present <span class="badge teal">6 teams</span></div>
+      <p class="authors">Senior author and research mentor/manager for six Algoverse teams — concurrent
+        12-week research projects across AI control, LLM evals, world models, and medical VLMs.</p>
+      <div class="btn-row">
+        <span class="lbtn" style="opacity:.7;cursor:default;">🔗 arXiv links coming soon</span>
+      </div>
+    </article>
+
+    <article class="pub reveal">
+      <h3>Teacher — ML4Good</h3>
+      <div class="venue">📍 Sep 2026 <span class="badge amber">Cohort of 18</span></div>
+      <p class="authors">Taught technical sessions on agents, chain-of-thought monitorability, and transformer
+        interpretability, and led coding walkthroughs. Facilitated discussion groups, ran project red-teaming,
+        and advised participants on research careers in safety.</p>
+    </article>
   </section>
 
   <!-- PROJECTS -->
@@ -172,26 +219,29 @@
     <p class="eyebrow reveal">Toolkit</p>
     <h2 class="sec-title reveal" style="margin-bottom:26px;">Technologies &amp; skills</h2>
     <div class="skills-grid">
-      <div class="skillcard reveal"><h3>Languages</h3><div class="pills">
-        <span class="pill">Python</span><span class="pill">C++</span><span class="pill">MATLAB</span><span class="pill">SQL</span><span class="pill">JavaScript</span></div></div>
-      <div class="skillcard reveal"><h3>ML Frameworks</h3><div class="pills">
-        <span class="pill">PyTorch</span><span class="pill">TensorFlow</span><span class="pill">JAX</span><span class="pill">Hugging Face</span><span class="pill">scikit-learn</span><span class="pill">NumPy</span></div></div>
-      <div class="skillcard reveal"><h3>Methods</h3><div class="pills">
-        <span class="pill">Transformers</span><span class="pill">LoRA &amp; DPO</span><span class="pill">Bayesian Modeling</span><span class="pill">Reinforcement Learning</span><span class="pill">Self-Supervised Learning</span><span class="pill">Mechanistic Interpretability</span><span class="pill">Signal Processing</span></div></div>
-      <div class="skillcard reveal"><h3>Tools &amp; Platforms</h3><div class="pills">
-        <span class="pill">Git</span><span class="pill">Linux</span><span class="pill">Docker</span><span class="pill">LangGraph</span><span class="pill">Weights &amp; Biases</span><span class="pill">LaTeX</span></div></div>
+      <div class="skillcard reveal"><h3>Interpretability</h3><div class="pills">
+        <span class="pill">Linear Probes</span><span class="pill">Activation Steering</span><span class="pill">Logit Lens</span><span class="pill">TransformerLens</span></div></div>
+      <div class="skillcard reveal"><h3>Evals &amp; Agents</h3><div class="pills">
+        <span class="pill">Inspect</span><span class="pill">LangGraph</span><span class="pill">ControlArena</span><span class="pill">Honeypot Design</span><span class="pill">LLM-Judge Scorers</span></div></div>
+      <div class="skillcard reveal"><h3>Training &amp; Infra</h3><div class="pills">
+        <span class="pill">PyTorch</span><span class="pill">Multi-node (H100)</span><span class="pill">LoRA / PEFT</span><span class="pill">DPO</span><span class="pill">vLLM</span><span class="pill">Hugging Face</span><span class="pill">W&amp;B</span></div></div>
+      <div class="skillcard reveal"><h3>Core</h3><div class="pills">
+        <span class="pill">Python</span><span class="pill">C++</span><span class="pill">MATLAB</span><span class="pill">Signal Processing</span></div></div>
+      <div class="skillcard reveal"><h3>Other</h3><div class="pills">
+        <span class="pill">Git</span><span class="pill">Linux</span><span class="pill">Docker</span><span class="pill">LaTeX</span><span class="pill">SQL</span><span class="pill">JavaScript</span><span class="pill">scikit-learn</span><span class="pill">NumPy</span></div></div>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <p class="eyebrow reveal">Contact</p>
-    <h2 class="sec-title reveal">Let's build something real</h2>
-    <p class="reveal">Open to research collaborations and roles in technical AI safety, interpretability, and brain-inspired ML.</p>
+    <h2 class="sec-title reveal">Get in touch</h2>
+    <p class="reveal">Open to roles in research management, technical AI safety, and neuroAI.</p>
     <div class="contact-links reveal">
       <a href="mailto:sruthi.kuriakose99@gmail.com" class="chip primary" data-mag>Email</a>
       <a href="https://github.com/sruthi-sk" target="_blank" rel="noopener" class="chip" data-mag>GitHub</a>
       <a href="https://scholar.google.com/citations?hl=en&user=Ra47vbkAAAAJ" target="_blank" rel="noopener" class="chip" data-mag>Scholar</a>
+      <a href="https://www.researchgate.net/profile/Sruthi-Kuriakose-3" target="_blank" rel="noopener" class="chip" data-mag>ResearchGate</a>
       <a href="https://www.linkedin.com/in/sruthikuriakose" target="_blank" rel="noopener" class="chip" data-mag>LinkedIn</a>
     </div>
   </section>
@@ -199,7 +249,7 @@
 
 <footer class="footer">
   <span>© <span id="year"></span> Sruthi Susan Kuriakose</span>
-  <span>London, UK · made with a little parallax &amp; a lot of curiosity</span>
+  <span>London, UK</span>
 </footer>
 
 <!-- MODALS -->
@@ -208,8 +258,8 @@
   <div class="modal-card">
     <button class="modal-close" data-close>×</button>
     <h3>Probabilistic Calibration Is a Trainable Capability in Language Models</h3>
-    <div class="venue">📍 Submitted to COLM 2026 · MARS 4.0</div>
-    <p class="abstract">We ask whether predictive calibration in language models is a capability that can be deliberately trained, rather than an emergent side-effect — studying how training objectives and finetuning shape a model's calibration and the reliability of its probability estimates, with relevance to alignment and white-box monitoring.</p>
+    <div class="venue">MARS 4.0</div>
+    <p class="abstract">Ask a model for a random weekday and it says Wednesday 80% of the time. We show probabilistic calibration is a trainable capability rather than an emergent side-effect: trie-based soft targets cut KL by an order of magnitude on held-out distribution families and transfer to natural language (Wednesday bias 80%→40%) with minimal capability cost — with relevance to alignment and white-box monitoring.</p>
     <a class="lbtn" href="https://scholar.google.com/citations?hl=en&user=Ra47vbkAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
   </div>
 </div>
@@ -219,7 +269,7 @@
     <button class="modal-close" data-close>×</button>
     <h3>Reasoning LLMs Can Subvert Intervention-Based Faithfulness Checks</h3>
     <div class="venue">📍 Report · 2nd Place, Impact First Research Fellowship</div>
-    <p class="abstract">Intervention-based consistency checks are a popular tool for auditing whether a model's chain of thought is faithful to its underlying reasoning. We design experiments that scale reasoning-task difficulty and show that reasoning models can systematically subvert these checks — raising questions about the reliability of CoT monitorability as a safety guarantee.</p>
+    <p class="abstract">As tasks get harder, non-thinking and distilled models increasingly follow injected incorrect reasoning — while some thinking models (Qwen3) actively revise it, breaking the difficulty-consistency assumption behind CoT monitoring. We design experiments that scale reasoning-task difficulty and show that intervention-based faithfulness checks can be systematically subverted, raising questions about the reliability of CoT monitorability as a safety guarantee.</p>
     <a class="lbtn" href="https://scholar.google.com/citations?hl=en&user=Ra47vbkAAAAJ" target="_blank" rel="noopener">Read more ↗</a>
   </div>
 </div>
@@ -229,7 +279,7 @@
     <button class="modal-close" data-close>×</button>
     <h3>Runaway-Optimiser-Like Failure Modes on Bio &amp; Economically Aligned Benchmarks</h3>
     <div class="venue">📍 LessWrong · arXiv · bioBLUE</div>
-    <p class="abstract">bioBLUE evaluates LLM decision-making under biologically and economically inspired constraints — homeostasis, sustainability, and multi-objective trade-offs. Through long-horizon textual simulations we surface systematic runaway-optimiser-like failures, including unbounded maximisation, neglect of stated objectives, and self-imitative drift — highlighting alignment risks in long-running scenarios.</p>
+    <p class="abstract">In long-horizon control environments, LLMs behave competently for many steps, then drift in structured ways: collapsing multi-objective trade-offs into single-objective maximisation, ignoring homeostatic targets, and falling into self-imitative loops — well before the context window fills. Our paper evaluates this under biologically and economically inspired constraints (homeostasis, sustainability, multi-objective trade-offs), surfacing systematic runaway-optimiser-like failures and highlighting alignment risks in long-running scenarios.</p>
     <a class="lbtn" href="https://github.com/sruthi-sk/bioblue" target="_blank" rel="noopener">Code on GitHub ↗</a>
   </div>
 </div>
@@ -242,8 +292,29 @@
     <p class="abstract">This thesis investigates the Distributional Successor Measure (DSM) as a computational model of the hippocampus. I train a generative, particle-based distributional reinforcement-learning model using an adversarial MMD loss to capture future-state distributions in spatial tasks, with structured inputs inspired by hippocampal place cells. Probing the learned representations reveals task- and environment-specific spatial structure, with latent components that linearly decode present and future locations — mirroring neural and behavioural activity. Benchmarked against the classic Successor Representation, the DSM shows ~15% greater representational stability under remapping, indicating improved robustness to environmental perturbation.</p>
     <div class="btn-row">
       <a class="lbtn" href="https://github.com/sruthi-sk/dsm-hippocampus" target="_blank" rel="noopener">Code ↗</a>
-      <a class="lbtn" href="#" data-pdf>PDF ↗</a>
+      <a class="lbtn" href="https://github.com/Sruthi-sk/dsm-hippocampus/blob/main/MSc_Thesis_UCL.pdf" target="_blank" rel="noopener">PDF ↗</a>
     </div>
+  </div>
+</div>
+
+<div class="modal" id="m-meta">
+  <div class="modal-ov" data-close></div>
+  <div class="modal-card">
+    <button class="modal-close" data-close>×</button>
+    <h3>Can LLMs Metacognitively Monitor &amp; Control Their Own Internals?</h3>
+    <div class="venue">📍 MARS 4.0 · ongoing</div>
+    <p class="abstract">Testing whether LLMs can deliberately monitor and control their own output distributions — early results show models can modulate output entropy on instruction, but with systematic position bias (option A). Toward white-box monitoring: if a model can control its uncertainty, when can you trust its reports of it?</p>
+    <a class="lbtn" href="https://scholar.google.com/citations?hl=en&user=Ra47vbkAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
+  </div>
+</div>
+<div class="modal" id="m-scheme">
+  <div class="modal-ov" data-close></div>
+  <div class="modal-card">
+    <button class="modal-close" data-close>×</button>
+    <h3>Honeypots for Scheming &amp; Evaluation-Awareness</h3>
+    <div class="venue">📍 Athena</div>
+    <p class="abstract">Built honeypot environments plus linear probes and activation steering to test whether evaluation-awareness causally ablates scheming — probing when a model's sense that it is "being tested" drives its propensity to scheme, and whether steering that representation changes behaviour.</p>
+    <span class="lbtn" style="opacity:.7;cursor:default;">🚧 Blog post under construction</span>
   </div>
 </div>
 

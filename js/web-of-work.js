@@ -38,12 +38,12 @@
     { id: 'brain', label: 'Brain-Inspired AI', type: 'interest', desc: 'Neural computation & models of the hippocampus.', link: 'index.html#about' },
     { id: 'neuro', label: 'Neurotech & Signals', type: 'interest', desc: 'EEG pipelines, seizure prediction, neurostimulation & biomedical signals.', link: 'index.html#about' },
     // ── papers ──
-    { id: 'calib', label: 'Probabilistic Calibration', type: 'paper', desc: 'Calibration as a trainable capability — submitted to COLM 2026.', link: 'https://scholar.google.com/citations?hl=en&user=Ra47vbkAAAAJ' },
-    { id: 'faith', label: 'Faithfulness Checks', type: 'paper', desc: 'LLMs subverting CoT checks — 2nd place, Impact First Fellowship.', link: 'https://scholar.google.com/citations?hl=en&user=Ra47vbkAAAAJ' },
-    { id: 'bio', label: 'bioBLUE', type: 'paper', desc: 'Bio-inspired alignment benchmark for LLMs · arXiv.', link: 'https://github.com/sruthi-sk/bioblue' },
-    { id: 'dsm', label: 'DSM Hippocampus', type: 'paper', desc: 'Distributional successor model of the hippocampus · MSc thesis.', link: 'https://github.com/sruthi-sk/dsm-hippocampus' },
+    { id: 'calib', label: 'Probabilistic Calibration', type: 'paper', desc: 'Calibration as a trainable capability in language models.', link: 'https://arxiv.org/abs/2605.11845' },
+    { id: 'faith', label: 'Faithfulness Checks', type: 'paper', desc: 'LLMs subverting CoT checks — 2nd place, Impact First Fellowship.', link: 'https://drive.google.com/file/d/1_BUGyONEfDkNwsHox6VTPL5rDWdzgGub/view?usp=sharing' },
+    { id: 'bio', label: 'bio-inspired alignment', type: 'paper', desc: 'Bio-inspired alignment benchmark for LLMs · arXiv.', link: 'https://arxiv.org/abs/2509.02655' },
+    { id: 'dsm', label: 'DSM Hippocampus', type: 'paper', desc: 'Distributional successor model of the hippocampus · MSc thesis.', link: 'https://github.com/Sruthi-sk/dsm-hippocampus/blob/main/MSc_Thesis_UCL.pdf' },
     // ── projects ──
-    { id: 'steer', label: 'Test-Awareness Steering', type: 'project', desc: 'Probe-guided steering of problematic generations.', link: 'https://github.com/sruthi-sk/Test_Awareness_Steering' },
+    { id: 'steer', label: 'Test-Awareness Steering', type: 'project', desc: 'Steering for evaluation, test awareness', link: 'https://github.com/sruthi-sk/Test_Awareness_Steering' },
     { id: 'sdft', label: 'Self-Distillation FT', type: 'project', desc: 'ARENA capstone — continual learning via self-distillation.', link: 'https://github.com/sruthi-sk/sdft-arena' },
     { id: 'coadapt', label: 'Human-AI Co-Adaptation', type: 'project', desc: 'Multi-agent self-play + SAC for human–robot collaboration.', link: 'https://github.com/sruthi-sk/RILI_co-adaptation' },
     { id: 'mri', label: 'MRI Iron Estimation', type: 'project', desc: 'Non-invasive liver-iron quantification from MRI.', link: 'https://github.com/sruthi-sk/MRI-Iron-estimation' },

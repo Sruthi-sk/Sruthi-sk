@@ -30,7 +30,7 @@
     const ctx = fx.getContext('2d');
     let parts = [];
     const COLORS = ['#6C5CE7', '#3B82F6', '#14B8A6', '#1C2030'];
-    function size() {
+     function size() {
       const dpr = Math.min(devicePixelRatio || 1, 2);
       fx.width = innerWidth * dpr; fx.height = innerHeight * dpr;
       fx.style.width = innerWidth + 'px'; fx.style.height = innerHeight + 'px';
